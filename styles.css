@@ -1,0 +1,92 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Comic Relief", system-ui;
+    background-color: #000;
+    color: #000;
+}
+
+.content {
+    width: 70vw;
+    max-width: 900px;
+    min-width: 300px;
+    min-height: 85vh;
+
+    border-radius: 20px;
+    background-color: lightblue;
+    padding: 32px;
+    gap: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input {
+    font-size: 30px;
+}
+.form-input input {
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.grid-remainders {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    grid-template-columns: repeat(2, 20px);
+    column-gap: 40px;
+    row-gap: 10px;
+    font-size: 17px;
+}
+
+.replace-btn {
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.replace-btn:hover {
+color: #fff;
+background-color: #000;
+}
+
+.grid-powers {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-rows: auto;
+    grid-template-rows: repeat(3, 35px);
+    column-gap: 22px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.row-2 {
+    color: #f00;
+}
+
+.row-3 {
+    color: #00f
+}
+
+.row-3-zero {
+    color: #00f;
+    opacity: 0.4;
+}
+
+.sum {
+    font-size: 20px;
+}
