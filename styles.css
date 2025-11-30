@@ -25,11 +25,13 @@ body {
 
     display: flex;
     flex-direction: column;
+    row-gap: 90px;
     align-items: center;
 }
 
 .form-input {
     font-size: 30px;
+    padding-top: 40px;
 }
 .form-input input {
     margin-left: 10px;
