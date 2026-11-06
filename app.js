@@ -19,6 +19,12 @@ function getRemainders(num) {
 // all calculation after click button Zamień
 replaceBtn.addEventListener('click', () => {
     number = document.querySelector('.form-input input').value * 1;
+    if (!Number.isSafeInteger(number) || number < 1) {
+        sumToNumber.textContent = 'Podaj liczbę całkowitą dodatnią (do 9007199254740991)';
+        gridRemainders.innerHTML = '';
+        gridPowers.innerHTML = '';
+        return;
+    }
     const remaindersTab = getRemainders(number);
     let binTab = [];
     let sumToText = '';
